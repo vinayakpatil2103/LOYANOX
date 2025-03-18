@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+.report-card {
+    background: #fff9d9;
+    padding: 15px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+}
+table {
+    width: 100%;
+    margin-top: 8px;
+    border-collapse: collapse;
+    background: #fff;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: #333;
+    color: white;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.footer .address {
+    text-align: left;
+}
+.footer .logo {
+    text-align: right;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+    .report-card {
+        padding: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .address, .footer .logo {
+        text-align: center;
+        margin-top: 5px;
+    }
+}

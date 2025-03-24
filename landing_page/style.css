@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.hero-content {
+    max-width: 50%;
+}
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.cta-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.discover {
+    background-color: white;
+    color: #2575fc;
+}
+.download {
+    background-color: #ff4081;
+    color: white;
+}
+.hero-image img {
+    width: 300px;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+}
